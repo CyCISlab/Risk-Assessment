@@ -1,0 +1,249 @@
+{
+ "n_matched": 2650,
+ "n_corpus": 6531,
+ "n_kev": 56,
+ "class_counts": {
+  "controller": 1047,
+  "engineering": 172,
+  "field": 236,
+  "network": 439,
+  "supervisory": 756
+ },
+ "devices": {
+  "network": [
+   [
+    "standard_network",
+    "Router (DMZ)",
+    0.85,
+    1.0
+   ],
+   [
+    "standard_network",
+    "Maintenance Interface",
+    0.75,
+    1.0
+   ],
+   [
+    "edge_hidden_network",
+    "Corporate Firewall",
+    0.2,
+    1.0
+   ],
+   [
+    "edge_hidden_network",
+    "DMZ Router",
+    0.85,
+    1.0
+   ],
+   [
+    "edge_hidden_network",
+    "Edge Gateway",
+    0.85,
+    1.0
+   ],
+   [
+    "edge_hidden_network",
+    "Protocol Converter",
+    0.85,
+    1.0
+   ],
+   [
+    "edge_hidden_network",
+    "Serial Gateway",
+    1.0,
+    1.0
+   ],
+   [
+    "edge_hidden_network",
+    "Vendor Connection",
+    0.2,
+    1.0
+   ]
+  ],
+  "supervisory": [
+   [
+    "standard_network",
+    "SCADA (DMZ)",
+    0.85,
+    1.0
+   ],
+   [
+    "standard_network",
+    "SCADA (OT)",
+    0.75,
+    1.0
+   ],
+   [
+    "standard_network",
+    "HMI",
+    0.75,
+    1.0
+   ],
+   [
+    "edge_hidden_network",
+    "IT Management Server",
+    0.2,
+    1.0
+   ],
+   [
+    "edge_hidden_network",
+    "SCADA Server",
+    0.75,
+    1.0
+   ],
+   [
+    "edge_hidden_network",
+    "HMI",
+    0.75,
+    1.0
+   ],
+   [
+    "edge_hidden_network",
+    "SCADA Server (internal)",
+    0.75,
+    1.0
+   ],
+   [
+    "edge_hidden_network",
+    "Maintenance Server",
+    0.2,
+    1.0
+   ]
+  ],
+  "engineering": [
+   [
+    "standard_network",
+    "EWS",
+    0.75,
+    1.0
+   ],
+   [
+    "edge_hidden_network",
+    "Engineering Workstation",
+    0.75,
+    1.0
+   ]
+  ],
+  "controller": [
+   [
+    "standard_network",
+    "PLC1",
+    0.75,
+    1.0
+   ],
+   [
+    "standard_network",
+    "PLC2",
+    0.75,
+    1.0
+   ],
+   [
+    "standard_network",
+    "PLC3",
+    0.75,
+    1.0
+   ],
+   [
+    "standard_network",
+    "Legacy PLC",
+    1.0,
+    0.5
+   ],
+   [
+    "standard_network",
+    "PLC1 (Maint)",
+    0.75,
+    1.0
+   ],
+   [
+    "edge_hidden_network",
+    "Control PLC",
+    0.75,
+    1.0
+   ],
+   [
+    "edge_hidden_network",
+    "Legacy PLC",
+    1.0,
+    0.25
+   ]
+  ],
+  "field": [
+   [
+    "standard_network",
+    "Silent Sensor",
+    1.0,
+    0.25
+   ],
+   [
+    "standard_network",
+    "Serial Device",
+    1.0,
+    1.0
+   ],
+   [
+    "standard_network",
+    "Hidden Backup",
+    1.0,
+    0.25
+   ],
+   [
+    "edge_hidden_network",
+    "Hidden Sensor 1",
+    1.0,
+    0.5
+   ],
+   [
+    "edge_hidden_network",
+    "Hidden Sensor 2",
+    1.0,
+    0.5
+   ],
+   [
+    "edge_hidden_network",
+    "Serial Device",
+    1.0,
+    1.0
+   ],
+   [
+    "edge_hidden_network",
+    "Backup System",
+    1.0,
+    0.5
+   ]
+  ]
+ },
+ "CVSS base": {
+  "escalate_deesc_share": null,
+  "r_vs_CVSS": 1.0,
+  "KEV_AUC": 0.726,
+  "SSVC_TI_AUC": 0.831
+ },
+ "hybrid fixed defaults": {
+  "escalate_deesc_share": [
+   51.2,
+   5.2,
+   90.8
+  ],
+  "r_vs_CVSS": 0.87,
+  "KEV_AUC": 0.72,
+  "SSVC_TI_AUC": 0.827
+ },
+ "hybrid observed context": {
+  "escalate_deesc_share": [
+   60.3,
+   1.1,
+   98.2
+  ],
+  "r_vs_CVSS": 0.838,
+  "KEV_AUC": 0.72,
+  "KEV_diff_vs_CVSS_CI": [
+   -0.044,
+   0.034
+  ],
+  "SSVC_TI_AUC": 0.91
+ },
+ "SSVC vector-only AUC": 0.957,
+ "SSVC vector+observed-hybrid AUC": 0.957,
+ "n_ssvc": 2245
+}
