@@ -28,6 +28,8 @@ part of the official CVSS v3.1 specification -- they are this project's
 own component-level (probability/impact/risk) decomposition, kept
 consistent in spirit and weighting with CVSSv4Calculator's decomposition
 of the same name so scores are comparable across CVSS versions and IVSS.
+
+N,A,L,P etc. are not used in the final calculation. We used CVSS v3 and v4.
 """
 
 from cvss import CVSS3

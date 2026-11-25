@@ -1,0 +1,44 @@
+[
+  {
+    "network_type": "standard_network",
+    "variation": "baseline",
+    "adjustment": "balanced",
+    "duration": 17.253201961517334,
+    "success": true
+  },
+  {
+    "network_type": "standard_network",
+    "variation": "conservative",
+    "adjustment": "conservative",
+    "duration": 13.367302656173706,
+    "success": true
+  },
+  {
+    "network_type": "standard_network",
+    "variation": "aggressive",
+    "adjustment": "aggressive",
+    "duration": 13.397011995315552,
+    "success": true
+  },
+  {
+    "network_type": "edge_hidden_network",
+    "variation": "baseline",
+    "adjustment": "balanced",
+    "duration": 14.570299625396729,
+    "success": true
+  },
+  {
+    "network_type": "edge_hidden_network",
+    "variation": "conservative",
+    "adjustment": "conservative",
+    "duration": 14.656655550003052,
+    "success": true
+  },
+  {
+    "network_type": "edge_hidden_network",
+    "variation": "aggressive",
+    "adjustment": "aggressive",
+    "duration": 15.32845950126648,
+    "success": true
+  }
+]

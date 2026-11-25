@@ -411,17 +411,17 @@ class IVSSCalculator:
             
             # Apply adjustment weights based on method
             if self.adjustment_method == 'aggressive':
-                imp_weight = 0.8   # Increased from 0.6
-                acc_weight = 0.6   # Increased from 0.4
-                scale_factor = 3.0 # Increased from 2.0
+                imp_weight = 0.8
+                acc_weight = 0.6
+                scale_factor = 3.0
             elif self.adjustment_method == 'conservative':
-                imp_weight = 0.5   # Increased from 0.4
-                acc_weight = 0.3   # Increased from 0.2
-                scale_factor = 1.5 # Increased from 1.0
+                imp_weight = 0.5
+                acc_weight = 0.3
+                scale_factor = 1.5
             else:  # 'balanced'
-                imp_weight = 0.7   # Increased from 0.5
-                acc_weight = 0.5   # Increased from 0.3
-                scale_factor = 2.5 # Increased from 1.5
+                imp_weight = 0.7
+                acc_weight = 0.5
+                scale_factor = 2.5
                         
             # Combined modifier impact
             modifier = (imp_factor * imp_weight + acc_factor * acc_weight) * scale_factor
@@ -450,11 +450,11 @@ class IVSSCalculator:
                 
                 # Determine weight for the modifier based on adjustment method
                 if self.adjustment_method == 'aggressive':
-                    weight = 4.0  # Increased from 3.0
+                    weight = 4.0
                 elif self.adjustment_method == 'conservative':
-                    weight = 1.5  # Increased from 1.0
+                    weight = 1.5
                 else:  # 'balanced'
-                    weight = 3.0  # Increased from 2.0
+                    weight = 3.0
                 
                 # Apply modifier to base score with appropriate weighting
                 score = cvss_base + (modifier * weight)
@@ -469,8 +469,7 @@ class IVSSCalculator:
                         score += 0.5  # Moderate bonus for auth bypass
                 
                 # Check if CP (network segmentation) indicates boundary protection concerns
-                if self.metrics.get('CP') == self.NETWORK_SEGMENTATION_PARTIAL or \
-                   self.metrics.get('CP') == self.NETWORK_SEGMENTATION_DMZ_ONLY:
+                if self.metrics.get('CP') is not None and self.metrics.get('CP') >= self.NETWORK_SEGMENTATION_PARTIAL:
                     # For poor network segmentation, add another penalty
                     if self.adjustment_method == 'aggressive':
                         score += 0.9  # Significant penalty for segmentation issues
@@ -520,8 +519,7 @@ class IVSSCalculator:
                         score += 0.5  # Moderate bonus for auth bypass
                 
                 # Check if CP (network segmentation) indicates boundary protection concerns
-                if self.metrics.get('CP') == self.NETWORK_SEGMENTATION_PARTIAL or \
-                   self.metrics.get('CP') == self.NETWORK_SEGMENTATION_DMZ_ONLY:
+                if self.metrics.get('CP') is not None and self.metrics.get('CP') >= self.NETWORK_SEGMENTATION_PARTIAL:
                     # For poor network segmentation, add a penalty
                     if self.adjustment_method == 'aggressive':
                         score += 0.9  # Significant penalty for segmentation issues
