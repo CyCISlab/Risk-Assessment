@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-coverage_by_sector_vendor.py  -- corpus coverage characterisation (Section 5.4, Appendix)
+coverage_by_sector_vendor.py  -- corpus coverage characterisation 
 
 Computes usable-vector coverage (Section 5.4) by CISA critical-infrastructure
 sector and by vendor. "Usable" = the CVE carries a published v3.x or v4.0 vector.

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-faithful_arch_factorial.py  -- RQ2 architecture-effect ablation (Section 5.2.4)
+faithful_arch_factorial.py  -- RQ2 architecture-effect ablation 
 
 WHAT IT DOES
   Reproduces the submitted scoring path EXACTLY (all network devices injected into

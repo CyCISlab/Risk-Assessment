@@ -2,8 +2,7 @@
 """
 multiseed_arch_gap.py
 
-Multi-seed robustness check for the network-architecture effect (Section 7.2:
-"single-seed runs").  The paper reports the standard - edge/hidden IVSS gap from
+Multi-seed robustness check for the network-architecture effect ("single-seed runs").  The paper reports the standard - edge/hidden IVSS gap from
 one seed per architecture; this script aggregates that gap across several seeds
 and reports mean +/- SD, so you can state whether the single-seed figure is
 representative.
