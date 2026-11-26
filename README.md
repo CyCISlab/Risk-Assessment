@@ -1,6 +1,6 @@
-# Additions
+# Overall
 
-These files extend the repository. The existing framework (`Project Code/`), corpus inputs and scored corpus
+The existing framework (`Project Code/`), corpus inputs and scored corpus
 (`cve_scores_extracted.csv`, `ics_advisory_archive_merged_2010_2026.csv`, `known_exploited_vulnerabilities.json`,
 `cve_bulk_scores.csv`) and the yearly advisory CSVs are used as they are.
 
